@@ -1,0 +1,26 @@
+/* src/app/styles/theme.css */
+/* テーマカラーなどの共通スタイルを定義 */
+
+.bg-primary {
+  background-color: #3b82f6; /* blue-500 */
+}
+
+.text-primary {
+  color: #3b82f6; /* blue-500 */
+}
+
+.hover\:bg-primary:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.text-green-success {
+  color: #10b981; /* green-500 */
+}
+
+.bg-green-success {
+  background-color: #dcfce7; /* green-100 */
+}
+
+.border-green-success {
+  border-color: #a7f3d0; /* green-300 */
+}
