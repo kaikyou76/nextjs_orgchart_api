@@ -9,8 +9,9 @@ import Modal from "@/components/ui/Modal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080";
+//const API_BASE_URL =
+//process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080";
+const API_BASE_URL = process.env.VITE_API_URL || "http://localhost:8080";
 
 export default function BatchJobPage() {
   const router = useRouter();
