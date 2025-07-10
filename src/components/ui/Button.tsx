@@ -13,6 +13,7 @@ interface ButtonProps {
   isLoading?: boolean;
   variant?: ButtonVariant;
   iconLeft?: React.ReactNode;
+  type?: "button" | "submit" | "reset";
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
