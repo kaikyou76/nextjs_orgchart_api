@@ -5,9 +5,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-//const API_BASE_URL =
-// process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080";
-const API_BASE_URL = process.env.NVITE_API_URLL || "http://localhost:8080";
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080";
 
 export default function RegisterPage() {
   const router = useRouter();

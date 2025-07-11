@@ -4,9 +4,9 @@
 import { useState, useContext } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/components/AuthProvider";
-//const API_BASE_URL =
-//process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080";
-const API_BASE_URL = process.env.VITE_API_URL || "http://localhost:8080";
+
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080";
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
