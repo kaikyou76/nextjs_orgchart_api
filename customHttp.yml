@@ -1,24 +1,20 @@
+# customHttp.yml
 customHeaders:
   - pattern: "/api/*"
     headers:
       - key: "X-Content-Type-Options"
         value: "nosniff"
       - key: "Strict-Transport-Security"
-        value: "max-age=63072000"
+        value: "max-age=63072000; includeSubDomains; preload"
       - key: "X-Frame-Options"
         value: "DENY"
       - key: "X-XSS-Protection"
         value: "1; mode=block"
       - key: "Referrer-Policy"
-        value: "same-origin"
+        value: "strict-origin-when-cross-origin"
       - key: "Cache-Control"
         value: "no-cache, no-store, must-revalidate"
       - key: "Pragma"
         value: "no-cache"
       - key: "Expires"
         value: "0"
-
-proxy:
-  - pattern: "/api/*"
-    target: "http://ec2-13-114-183-62.ap-northeast-1.compute.amazonaws.com:8081"
-    rewrite: "/api/:path*"
